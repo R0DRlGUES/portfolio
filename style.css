@@ -119,7 +119,7 @@ footer {
 }
 .carousel {
   position: relative;
-  width: 600px;   /* ajuste conforme o tamanho que quiser */
+  width: 400px;   /* ajuste conforme o tamanho que quiser */
   max-width: 100%;
   margin: auto;
   overflow: hidden;
@@ -152,3 +152,28 @@ button.next {
 button.prev { left: 10px; }
 button.next { right: 10px; }
 
+.btn-construction {
+  display: inline-block;
+  background: #ffcc00;
+  color: #111;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-construction:hover {
+  background: #e6b800;
+}
+.construction {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.construction-img {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  height: auto;
+}
