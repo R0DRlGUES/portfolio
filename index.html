@@ -8,38 +8,45 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
         <img src="img/avatarGit.png" alt="Avatar" class="avatar">
         <h1>Pedro Henrique</h1>
         <p>Desenvolvedor Jr</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
-
     <section id="about">
         <h2>Sobre mim</h2>
-        <p>Sou apaixonado por desenvolvimento web e adoro criar aplicações modernas e funcionais.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+
     </section>
 
     <section id="projects">
         <h2>Projetos</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Projeto 1</h3>
-                <p>Descrição curta do projeto.</p>
-                <a href="#">Ver mais</a>
+
+        <!-- Carrossel -->
+        <div class="carousel">
+            <div class="slides">
+                <img src="img/batman.jpg" alt="Imagem 1">
+                <img src="img/Homem-Aranha.jpg" alt="Imagem 2">
+                <img src="img/download.jpg" alt="Imagem 3">
             </div>
-            <div class="project-card">
-                <h3>Projeto 2</h3>
-                <p>Descrição curta do projeto.</p>
-                <a href="#">Ver mais</a>
-            </div>
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
+
     </section>
 
     <section id="contact">
@@ -52,10 +59,7 @@
         </form>
     </section>
 
-    <footer>
-        <p>© 2025 Pedro Henrique | <a href="https://github.com/seuusuario">GitHub</a></p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <!-- JS no final para garantir que o DOM já carregou -->
+    <script src="scripts.js"></script>
 </body>
 </html>

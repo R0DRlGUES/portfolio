@@ -6,22 +6,32 @@
 }
 
 body {
-    background: #f0f0f0;
-    color: #333;
+    margin: 0; /* remove a margem padrão do navegador */
+    min-height: 100vh; /* garante que cubra toda a tela */
+    color: #ffffff;
+    background: rgb(0, 0, 0)
 }
 
 header {
     text-align: center;
-    padding: 40px 0;
-    background: #4CAF50;
-    color: white;
+    padding: 70px 0;
+    background: linear-gradient(to bottom,#68f16dce ,#2b662e, #000000);
+
 }
+
 
 .avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+nav {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;    
 }
 
 nav ul {
@@ -107,3 +117,38 @@ footer {
     background: #333;
     color: white;
 }
+.carousel {
+  position: relative;
+  width: 600px;   /* ajuste conforme o tamanho que quiser */
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
