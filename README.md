@@ -19,7 +19,7 @@ Tenho interesse e experiência em:
 
 ## Como acessar
 Este portfólio está hospedado via **GitHub Pages**.  
-👉 [Acesse aqui meu portfólio online](https://seu-usuario.github.io/seu-repositorio)  
+👉 [Acesse aqui meu portfólio online](https://r0drlgues.github.io/portfolio/) 
 
 ---
 
