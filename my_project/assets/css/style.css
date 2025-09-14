@@ -1,0 +1,167 @@
+/* confg geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h2.titulo span{
+    color: #00FF08;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.flex{
+    display: flex;
+}
+.btContato button{
+    padding: 8px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #000000;
+    cursor: pointer;
+    transform: skew(-20deg);
+    transition: 0.2s;
+
+    color: #ffffff;
+    border-left: 1px solid #00FF08;   
+    border-bottom: 2px solid #00FF08; 
+    border-top: none;               
+    border-right: none;             
+    border-radius: 5px;
+}
+.btContato button:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: #00FF08 0px 0px 20px;
+
+    border-left: none;
+    border-bottom: none;
+    border-top: 2px solid #00FF08;               
+    border-right: 1px solid #00FF08; 
+}
+
+
+/* confg header */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(65, 65, 65);
+    text-decoration: none; 
+    display: inline-block;
+    transition: 0.2s;
+
+}
+header a:hover{
+    color: white;
+    transform: scale(1.2);
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* confg topo do site */
+section.topDoSite{
+    padding: 40px 4%;
+    
+}
+section.topoDoSite > .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topoDoSite h1{
+    color: white;
+    font-size: 48px;
+}
+.topoDoSite .txtTopoSite h1 span{
+    color: #00FF08;
+}
+.topoDoSite .txtTopoSite p{
+    color: white;
+    margin: 40px 0;
+}
+
+.topoDoSite .imgTopo img{
+    position: relative;
+    animation: flutuante 4s ease-in-out infinite alternate;
+}
+img{
+    max-width: 50%;
+    align-items: center;
+    
+}
+@keyframes flutuante{
+    0%{
+        top : 0px;
+    }
+    100%{
+        top : 30px;
+    }
+}
+/* especialidades */
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+/* sobre */
+section.sobre {
+    padding: 40px 4%;
+}
+section.sobre .flex {
+    gap: 60px;
+    align-items: center;
+}
+.sobre .txtSobre{
+    color: white;
+}
