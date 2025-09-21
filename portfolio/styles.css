@@ -1,0 +1,133 @@
+/*  Config Gerais  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #141414;
+    height: 100vh;
+}
+.logo a img{
+    height: 20px;
+    width: 50px;
+}
+.flex{
+    display: flex;
+}
+
+/*  Config Header  */
+
+header{
+    padding: 10px 4%;
+    background-color: #141414;  
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .menu_descktop ul{
+    list-style-type: none;
+    color: white;
+}
+header .menu_descktop ul li{
+    display: inline-block;
+    padding: 0 56px;
+}
+header .menu_descktop a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+}
+header .menu_descktop a::after{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #00FF08;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+header .menu_descktop a:hover{
+    transform: scale(1.2);
+}
+header .menu_descktop a:hover::after{
+    width: 100%;
+}
+
+
+
+/*  Config Menu Mobile  */
+.btn_abir_menu{
+    display: none;
+}
+.btn_abir_menu i{
+    color: #00FF08;
+    font-size: 30px;
+}
+.menu_mobile{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    overflow: hidden;
+    transition:.8s;
+}
+.menu_mobile.abrir-menu{
+    width: 65%;
+}
+.menu_mobile.abrir-menu ~ .overlay_menu{
+    display: block;
+}
+.menu_mobile nav ul{
+    text-align: right;
+    list-style-type: none;
+}
+.menu_mobile nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 8%;
+    display: block;
+}
+.menu_mobile nav ul li a:hover{
+    background-color:  #00FF08;
+    color: black;
+}
+
+.btn_fechar i{
+    color: #00FF08;
+    font-size: 30px;
+}
+.btn_fechar {
+    padding: 20px 5%;
+}
+.overlay_menu{
+    background-color: #000000b5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888888;
+    display: none;
+}
+@media screen and (max-width: 1020px) {
+    .flex{
+        flex-direction: column;
+    }
+    .btn_abir_menu{
+    display: block;
+}
+    .menu_descktop{
+        display: none;
+    }
+}
