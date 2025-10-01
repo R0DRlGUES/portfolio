@@ -2,21 +2,25 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Jersey 10', sans-serif;
 }
 body{
     background-color: #141414;
     height: 100vh;
 }
 .logo a img{
-    height: 20px;
-    width: 50px;
+    height: 30px;
+    width: 100px;
+    
 }
 .flex{
     display: flex;
 }
-
-/*  Config Header  */
+.interface{
+    max-width: 1500px;
+    margin: 0px auto;
+}
+/*  Configuracao Header  */
 
 header{
     padding: 10px 4%;
@@ -39,7 +43,7 @@ header .menu_descktop a{
     text-decoration: none;
     color: white;
     display: inline-block;
-    font-size: 15px;
+    font-size: 25px;
     position: relative;
 }
 header .menu_descktop a::after{
@@ -130,4 +134,72 @@ header .menu_descktop a:hover::after{
     .menu_descktop{
         display: none;
     }
+}
+
+/*  Configuracao topo site  */
+
+
+section.topo_do_site{
+    padding: 50px 4%;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    border: 2px solid #00FF08;
+}
+section.topo_do_site a.saiba_mais{
+    text-decoration: none;
+    color: #353535;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+section.topo_do_site a.saiba_mais:hover{
+    color: #00ff08;
+    transform: scale(1.1);
+    text-shadow: #00FF00 0px 0px 10px;
+}
+
+section.topo_do_site > .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.texto_animado_saudacao {
+    display: block;
+    font-size: 3.5rem;
+
+    border-right: 10px solid #00FF08; /* cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 34ch;
+
+    animation: escrever 1s steps(26, end) forwards, cursor_final 1s step-end 1s 4 forwards; 
+
+}
+
+
+@keyframes escrever {
+    from { width: 0ch; }
+    to { width: 34ch; }
+}
+
+@keyframes cursor_final {
+    0%, 100% { border-right-color: transparent; }
+    50% { border-right-color: #00FF08; }
+}
+
+
+section.topo_do_site .naoseiainda img{
+    border-radius: 50%;
+    max-width: 300px;
+    padding-right: 20px;
+}
+.sobre{
+    border: 2px solid #ff0000;
+    padding: 50px 5%;
+}
+.naoseiainda{
+    border: 2px solid #fff200;
 }
