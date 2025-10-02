@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h2.titulo span{
+    color: #00FF08;
+}
+
+/* confg header */
+header{
+    padding: 40px 4%;
+    color: white;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(65, 65, 65);
+    text-decoration: none; 
+    display: inline-block;
+    transition: 0.2s;
+
+}
+header a:hover{
+    color: white;
+    transform: scale(1.2);
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* confg topo do site */
+
+.topo-site h1{
+    color: white;
+    font-size: 48px;
+}
+section.topo-site{
+    padding: 40px 4%;
+}
+section.topo-site > .flex{
+    align-items: center;
+    
+    
+}

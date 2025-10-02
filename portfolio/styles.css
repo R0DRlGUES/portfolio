@@ -7,11 +7,12 @@
 body{
     background-color: #141414;
     height: 100vh;
+    font-size: 35px;
+    color: white;
 }
 .logo a img{
     height: 30px;
-    width: 100px;
-    
+    width: 100px;    
 }
 .flex{
     display: flex;
@@ -23,7 +24,7 @@ body{
 /*  Configuracao Header  */
 
 header{
-    padding: 10px 4%;
+    padding: 30px 3%;
     background-color: #141414;  
 }
 header > .interface{
@@ -142,7 +143,7 @@ header .menu_descktop a:hover::after{
 section.topo_do_site{
     padding: 50px 4%;
     color: white;
-    font-size: 35px;
+    
     letter-spacing: 2px;
     font-weight: 400;
     border: 2px solid #00FF08;
@@ -160,7 +161,15 @@ section.topo_do_site a.saiba_mais:hover{
     transform: scale(1.1);
     text-shadow: #00FF00 0px 0px 10px;
 }
-
+section.topo_do_site .frase{
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+    color: #6d6c6c;
+    padding: 30px 3%;
+    border: #00FF00 2px solid;
+}
 section.topo_do_site > .flex{
     align-items: center;
     justify-content: center;
@@ -179,7 +188,6 @@ section.topo_do_site > .flex{
 
 }
 
-
 @keyframes escrever {
     from { width: 0ch; }
     to { width: 34ch; }
@@ -191,15 +199,23 @@ section.topo_do_site > .flex{
 }
 
 
-section.topo_do_site .naoseiainda img{
+.avatar img{
     border-radius: 50%;
     max-width: 300px;
-    padding-right: 20px;
+}
+.avatar{
+    border: #00FF00 2px solid;
+    padding: 30px 3%;
 }
 .sobre{
-    border: 2px solid #ff0000;
-    padding: 50px 5%;
+    border: #00FF00 2px solid;
+    padding: 30px 3%;
 }
-.naoseiainda{
-    border: 2px solid #fff200;
+
+
+/* Config Sobre*/
+.texto_sobre{
+    border: #00FF00 2px solid;
+    padding: 30px 3%;
+    
 }
